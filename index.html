@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>&lt;model-viewer&gt; template</title>
+    <meta charset="utf-8">
+    <meta name="description" content="&lt;model-viewer&gt; template">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" href="./styles.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <!-- <model-viewer> HTML element -->
+    <model-viewer src="ImageToStl.com_palm+tree-09.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="1.11" camera-orbit="-25.99deg 79.59deg 3.738m" field-of-view="29.92deg" shadow-softness="0.17">
+      <button class="Hotspot" slot="hotspot-1" data-position="0.2721265999933644m 0.5078034686700713m 0.20494945574602896m" data-normal="-0.27140034846841626m 0.33269745554400443m 0.9031357893062192m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">Una de las principales especies de palmera que se utilizan para la jardinería en climas mediterráneos y templados suaves.</div>
+      </button><button class="Hotspot" slot="hotspot-2" data-position="-0.42699832066197074m 0.959968440789714m 0.29727161994237195m" data-normal="-0.7232091666898182m -0.31966097764014334m 0.6121971582668174m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">Las condiciones ideales son los veranos calurosos, pero en invierno tiene una relativa resistencia al frío</div>
+      </button><button class="Hotspot" slot="hotspot-3" data-position="-0.04899100580389559m 0.3207270415941825m 0.1899167694708659m" data-normal="-0.08167500946587042m -0.34173330400852214m 0.9362411771334186m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">Son de color verde oscuro, y pueden medir entre 1.5 y 2 metros de longitud</div>
+      </button><button class="Hotspot" slot="hotspot-5" data-position="-0.18003422596198604m 0.1918433334343294m -0.057934228493441986m" data-normal="0.3089948189603775m 0.07103564252137798m -0.9484071590552334m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">No se debe podar el tronco, ya que esto puede matar la planta</div>
+      </button>
+      <div class="progress-bar hide" slot="progress-bar">
+          <div class="update-bar"></div>
+      </div>
+      <button slot="ar-button" id="ar-button">
+          View in your space
+      </button>
+      <div id="ar-prompt">
+          <img src="ar_hand_prompt.png">
+      </div>
+    </model-viewer>  
+    <script src="script.js"></script>
+    <!-- Loads <model-viewer> for browsers: -->
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+  </body>
+</html>
